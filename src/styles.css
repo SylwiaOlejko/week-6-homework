@@ -24,6 +24,14 @@ body {
     list-style: none;
   }
   
+  .link-code{
+
+    color: #7c7c7c;
+    font-size: 15px;
+    font-weight:100;
+    line-height: 30px;
+    margin:15;
+  }
  
   .weather-app {
     border: 1px solid #dadde1;
