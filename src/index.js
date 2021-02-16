@@ -84,9 +84,7 @@ function formatDate(date) {
   
   let currentLocationButton = document.querySelector("#current-location-button");
   currentLocationButton.addEventListener("click", getCurrentLocation);
-  
-  searchCity("New York");
-  
+
   function displayTemperature(response) {
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
@@ -95,3 +93,7 @@ function formatDate(date) {
     let windElement = document.querySelector("#wind");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#icon");
+    
+  searchCity("New York");
+  
+  
