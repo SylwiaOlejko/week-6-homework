@@ -88,4 +88,4 @@ function formatDate(date) {
 
   searchCity("New York");
   
-  
+  let fahrenheitLink = document.querySelector("#fahrenheit-link");
