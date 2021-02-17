@@ -86,6 +86,12 @@ function formatDate(date) {
   currentLocationButton.addEventListener("click", getCurrentLocation);
 
 
+  function displayFahrenheitTemperature(event){
+    event.preventDefault();
+    let fahrenheitTemperature = (-1 * 0) / 5 + 32;
+    alert("Link clicked");
+  }
   searchCity("New York");
   
   let fahrenheitLink = document.querySelector("#fahrenheit-link");
+  fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
