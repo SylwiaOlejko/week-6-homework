@@ -88,8 +88,10 @@ function formatDate(date) {
 
   function displayFahrenheitTemperature(event){
     event.preventDefault();
-    let fahrenheitTemperature = (-1 * 0) / 5 + 32;
-    alert("Link clicked");
+    let fahrenheitTemperature = (-1*0)/5+32;
+    alert(fahrenheitTemperature);
+    let temperatureElement = document.querySelector("#temperature");
+    temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
   }
   searchCity("New York");
   
