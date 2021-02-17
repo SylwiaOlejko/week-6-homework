@@ -63,7 +63,7 @@ function formatDate(date) {
     navigator.geolocation.getCurrentPosition(searchLocation);
   }
   
-  function convertToFahrenheit(event) {
+  /*function convertToFahrenheit(event) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = 66;
@@ -73,7 +73,7 @@ function formatDate(date) {
     event.preventDefault();
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = 19;
-  }
+  }*/
   
   let dateElement = document.querySelector("#date");
   let currentTime = new Date();
@@ -88,7 +88,7 @@ function formatDate(date) {
 
   function displayFahrenheitTemperature(event){
     event.preventDefault();
-    let fahrenheitTemperature = (-1*0)/5+32;
+    let fahrenheitTemperature = (temperatureElement.innerHTML * 0 ) / 5 + 32;
     
     let temperatureElement = document.querySelector("#temperature");
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
